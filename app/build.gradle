@@ -14,6 +14,7 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    maven { url "https://clojars.org/repo" }
 }
 
 dependencies {
@@ -24,7 +25,9 @@ dependencies {
     implementation 'com.google.guava:guava:30.1.1-jre'
 
     //alex's 1 dependency
-    compile 'de.gurkenlabs:litiengine:0.5.2'
+    implementation 'de.gurkenlabs:litiengine:0.5.2'
+
+    implementation 'clojure-interop:java.awt:1.0.2'
 }
 
 application {
